@@ -1,3 +1,8 @@
+@charset 'UTF-8';
+/*
+ *= require_self
+ *= require_tree .
+*/
 /*!
  * Bootstrap Responsive v2.0.3
  *
@@ -802,7 +807,7 @@
 
 @media (min-width: 980px) {
 nav {
-	margin-top:60px;
+ margin-top:60px;
 }
   .nav-collapse.collapse {
     height: auto !important;
@@ -811,6 +816,6 @@ nav {
 }
 
 #aaa{
-  margin: 0 auto;  
-  width: 100%;  
+  margin: 0 auto;
+  width: 100%;
 }

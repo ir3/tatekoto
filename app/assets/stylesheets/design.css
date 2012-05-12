@@ -1,5 +1,10 @@
+@charset 'UTF-8';
+/*
+ *= require_self
+ *= require_tree .
+*/
 #toppage{
-  background:#CCC;
+  background: #CCC;
 }
 #footer{
   text-align: right;

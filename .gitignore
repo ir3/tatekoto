@@ -13,3 +13,21 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+
+#
+README.rdoc
+*.swp
+*.gitkeep
+*.rbc
+*.sassc
+.sass-cache
+capybara-*.html
+.rspec
+/vendor/bundle
+/public/system/*
+/coverage/
+/spec/tmp/*
+**.orig
+rerun.txt
+pickle-email-*.html
+/config/database.yml
