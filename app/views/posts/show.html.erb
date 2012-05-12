@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+<p>
+  <b>題：</b>
+  <%= @post.title %>
+</p>
+<div  class="metro">
+  <div class="metro-sections">
+    <div class="metro-section" id="section1">
+      <a data-next="#section3" data-prior="#section2" href="#" class="next-section"></a>
+      <div class="tile">
+        <div class="tile-icon-large img01">
+        <% @post.body.split(/ /).each_with_index do |block,i| %>
+        <span> <%= '　'*i + block %> </span>
+        <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

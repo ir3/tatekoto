@@ -1,0 +1,8 @@
+<h1><%= t('title.new') %></h1>
+<% if current_user %>
+  <%= render 'form' %>
+<% else %>
+  <p><%= link_to 'サインイン', [ :new, :user_session ]  %></p>
+  <p><%= link_to 'ユーザー登録', [ :new, :user_registration ]  %></p>
+  <p><%= link_to 'パスワード再発行', [ :new, :user_password ]  %></p>
+<% end %>

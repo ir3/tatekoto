@@ -6,4 +6,7 @@ ja:
         password:  'パスワード'
         password_confirmation:  'パスワード(再入力)'
         remember_me:  '次回からパスワードを省く'
+      post:
+        title: '題名'
+        body:  '内容'
 
