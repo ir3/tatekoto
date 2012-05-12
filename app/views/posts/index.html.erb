@@ -7,6 +7,9 @@
     <th>タイトル</th>
     <th>本文</th>
     <th>#</th>
+    <% if current_user %>
+    <th>変更</th>
+    <% end %>
     <th>投稿日</th>
   </tr>
 
@@ -15,10 +18,13 @@
      t = DateTime.parse(post.created_at.to_s) + Rational(9,24) %>
   <tr bgcolor=<%= stripes.push(stripes[0]).shift %>>
     <td align='middle'><%= i+1 %></td>
-    <td><%= link_to('縦書', "posts/#{i+1}")%></td>
+    <td><%= link_to('縦書', post_path(post))%></td>
     <td><%= post.title %></td>
     <td><%= post.body %></td>
     <td><%= post.id %></td>
+    <% if current_user %>
+      <td><%= link_to('変更', edit_post_path(post))%> </td>
+    <% end %>
     <td><%= t.strftime("%Y/%m/%d %H:%M:%S") %></td>
   </tr>
 <% end %>
