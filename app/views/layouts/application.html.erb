@@ -1,14 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Tatekoto</title>
+  <title>Kesev</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
-<body>
+<body id="toppage">
+<header>
+  <%= render :partial => 'layouts/header' %>
+</header>
+  <p class='notice'><%= notice %></p>
+  <p class='alert'><%= alert %></p>
 
-<%= yield %>
+ <div class="container">
+   <div id="menu">
+      <%= render :partial => 'layouts/menu' %>
+   </div>
+   <div id='contents'><%= yield %></div>
+  <div class='clear'></div>
+</div>
+
+<footer>
+  <%= render :partial => 'layouts/footer' %>
+</footer>
 
 </body>
 </html>
