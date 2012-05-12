@@ -1,10 +1,32 @@
 <!DOCTYPE html>
 <html>
+<html lang="ja">
 <head>
-  <title>Kesev</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
+<meta charset="utf-8">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>たてこと:縦書言葉 | 川柳や俳句..を投稿しよう！</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="format-detection" content="telephone=no">
+<meta name="copyright" content="">
+<meta name="author" content="">
+<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+<%= stylesheet_link_tag "application", :media => "all" %>
+<%= stylesheet_link_tag "metro" %>
+<%= stylesheet_link_tag "bootstrap" %>
+<%= stylesheet_link_tag "bootstrap-responsive" %>
+<%= stylesheet_link_tag "desgin" %>
+<%= stylesheet_link_tag "tate-style" %>
+
+<%= javascript_include_tag "jquery-1.7.2.min" %>
+<%= javascript_include_tag "jquery.mousewheel" %>
+<%= javascript_include_tag "bootstrap.min" %>
+<%= javascript_include_tag "metro" %>
+<%= javascript_include_tag "application" %>
+<link rel="Shortcut Icon" type="image/x-icon" href="../assets/favicon.ico?body=1">
+<link rel="icon" type="image/gif" href="../assets/favicon.gif?body=1">
+<%= csrf_meta_tags %>
 </head>
 <body id="toppage">
 <header>

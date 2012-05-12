@@ -8,7 +8,8 @@
       </a>
       <a class="brand" href="/">たてこと 縦書言葉</a>
       <div class="nav-collapse collapse">
-         <span id="discription">川柳...</span>
+        <span id="discription">川柳...</span>
+        <span class="sakuhin"> <%= link_to('サインアウト', destroy_user_session_path, :method => :delete) if current_user %> </span>
       </div>
     </div>
   </div>
